@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED SPARTANS ARENA | Official Site</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="RedSpartansArena Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li><a href="#games" class="nav-link">GAMES</a></li>
+                
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-graphic" style="margin-bottom: 1rem;">
+                    <img src="images/logo.jpg" alt="RedSpartansArena" class="hero-logo">
+                </div>
+                <h1 class="hero-title">RED SPARTANS ARENA</h1>
+                <p class="hero-subtitle">Grab your exclusive piece of RedSpartansArena today!</p>
+                <a href="#" id="buyNowBtn" class="cta-button">BUY NOW</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/Red Esport Gradient Neon Esport Presentation - 2 - Edited.png" alt="Red Esport" class="hero-banner">
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Gallery Section (Combined) -->
+    <section id="gallery">
+        <div class="showcase-content showcase-grid">
+            <img src="images/asek.png" alt="Gallery Image" class="showcase-img">
+            <img src="images/banner.png" alt="Showcase Banner" class="showcase-img">
+        </div>
+    </section>
+
+    
+
+    
+
+    
+
+    <section id="games" class="games">
+  <h2 class="section-title">OUR GAMES</h2>
+  <div class="games-grid">
+    <div class="game-card">
+      <div class="game-image">
+        <img src="images/cod-mobile.png" alt="Call of Duty Mobile" class="game-logo">
+      </div>
+      <h3>Call of Duty Mobile</h3>
+      <p>Experience intense FPS gameplay on mobile with realistic combat and stunning graphics.</p>
+      <a href="https://www.callofduty.com/mobile" class="game-link" target="_blank">Learn More →</a>
+    </div>
+    <div class="game-card">
+      <div class="game-image">
+        <img src="images/mobile-legends.jpg" alt="Mobile Legends Bang Bang" class="game-logo">
+      </div>
+      <h3>Mobile Legends</h3>
+      <p>Join millions of players in epic 5v5 MOBA battles with unique heroes and strategies.</p>
+      <a href="https://www.mobilelegends.com" class="game-link" target="_blank">Learn More →</a>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Checkout Modal -->
+    <div id="checkoutModal" class="modal" aria-hidden="true">
+        <div class="modal-backdrop" data-close="modal"></div>
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+            <button class="modal-close" aria-label="Close" data-close="modal">&times;</button>
+            <h2 id="checkoutTitle">Checkout</h2>
+            <form id="checkoutForm" class="checkout-form">
+                <div class="form-row">
+                    <label for="custName">Full Name</label>
+                    <input type="text" id="custName" name="custName" required placeholder="e.g., John Doe">
+                </div>
+                <div class="form-row">
+                    <label for="custNumber">Phone Number</label>
+                    <input type="tel" id="custNumber" name="custNumber" required placeholder="e.g., +1 555 123 4567">
+                </div>
+                <div class="form-row">
+                    <label for="custAddress">Address</label>
+                    <textarea id="custAddress" name="custAddress" rows="3" required placeholder="Street, City, State, ZIP"></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="paymentMethod">Payment Method</label>
+                    <select id="paymentMethod" name="paymentMethod" required>
+                        <option value="">Select a payment method</option>
+                        <option value="card">Credit/Debit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="cod">Cash on Delivery</option>
+                    </select>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="cta-button">Confirm Purchase</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <p>&copy; 2025 Red Spartans Arena. All rights reserved.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>All trademarks and logos are the property of their respective owners.</p>
+        </div>
+    </footer>
+</body>
+</html>
